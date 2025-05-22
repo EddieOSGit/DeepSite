@@ -44,7 +44,7 @@
   </script>
   <style>
     ::selection { background: #3B82F6; color: #FFF; }
-    .hero-overlay { background: linear-gradient(rgba(0, 31, 63, 0.9), rgba(0, 31, 63, 0.7)); }
+    .hero-overlay { background: linear-gradient(rgba(218, 220, 222, 0.9), rgba(0, 31, 63, 0.7)); }
     .service-card { border-left: 4px solid #3B82F6; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
     .service-card:hover { transform: translateY(-8px); box-shadow: 0 10px 25px rgba(59,130,246,0.15); }
     .timeline-item:not(:last-child)::after {
@@ -123,9 +123,28 @@
     <section id="home" class="relative" aria-labelledby="hero-title">
       <div class="hero-overlay w-full h-full absolute"></div>
       <div class="bg-[url('assets/images/foundationprep.webp')] bg-cover bg-center min-h-[80vh] flex items-center justify-center relative shadow-lg crisp-section">
-        <!-- Stronger left-to-right and top-to-bottom gradient overlay for better text contrast -->
-        <div class="absolute inset-0 z-0" style="background: linear-gradient(100deg, rgba(24,29,35,0.97) 0%, rgba(24,29,35,0.7) 60%, rgba(24,29,35,0.25) 100%), linear-gradient(180deg, rgba(24,29,35,0.7) 0%, rgba(24,29,35,0.0) 80%);"></div>
-        <!-- Hero content intentionally left empty for clean, high-contrast look -->
+        <!-- Semi-opaque navy overlay for text contrast -->
+        <div class="absolute inset-0 z-0" style="background: linear-gradient(120deg, rgba(10,20,40,0.82) 0%, rgba(24,29,35,0.7) 60%, rgba(24,29,35,0.4) 100%);"></div>
+        <div class="container mx-auto px-4 relative z-10 flex flex-col items-center justify-center text-center animate-fade-in">
+          <h1 class="font-heading font-black text-3xl md:text-5xl lg:text-6xl mb-4 leading-tight text-white drop-shadow-lg">Building Strong Foundations for Washington’s Future</h1>
+          <h2 class="font-heading font-semibold text-lg md:text-2xl text-silver/90 mb-6 max-w-2xl mx-auto">Precision excavation, demolition, and utility installation—backed by decades of local expertise in Kennewick, Pasco, Richland, Yakima & beyond.</h2>
+          <ul class="mb-8 space-y-2 text-base md:text-lg text-silver/90 font-medium">
+            <li class="flex items-center justify-center gap-2"><span class="text-accent text-xl">✔️</span> Free on-site estimates & permitting assistance</li>
+            <li class="flex items-center justify-center gap-2"><span class="text-accent text-xl">✔️</span> Licensed, insured, and safety-focused crews</li>
+            <li class="flex items-center justify-center gap-2"><span class="text-accent text-xl">✔️</span> Timely project completion, every time</li>
+          </ul>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4 animate-slide-up">
+            <a href="#contact" class="px-8 py-4 rounded-lg font-bold text-lg bg-accent text-white shadow-lg transition-all duration-300 hover:bg-blue-600 focus:outline-accent">Get Your Free Estimate</a>
+            <a href="#services" class="font-bold text-accent text-base underline underline-offset-4 hover:text-blue-400 transition-colors duration-200">View Our Services</a>
+          </div>
+          <div class="text-silver/80 text-base mt-2 mb-6">Or call us now at <a href="tel:5095911632" class="text-accent font-bold hover:underline">(509) 591-1632</a> for 24/7 emergency site support.</div>
+          <div class="flex flex-col items-center mt-6 animate-fade-in">
+            <a href="#services" aria-label="Scroll to Services" class="group flex flex-col items-center">
+              <span class="text-silver/70 text-xs mb-1">Learn More</span>
+              <svg class="w-7 h-7 text-accent group-hover:text-blue-400 transition-colors animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
